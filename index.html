@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -7,25 +8,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3 - Triangle Calculators</title>
 </head>
-    <form>
-        <lavel for="sidea">Side a:</label>
-        <input type="text" id="sidea" name="sidea" value ="0"> <br>
-
-        <label for="sideb">Side b:</label>
-        <input type ="text" id="sideb" name="sideb" value ="0"> <br>
-
-        <label for ="angleC">Angle C:</label>
-        <input type="text" id="angleC" name="angleC" value ="0"><br>
-
-        <label for="sidec">Side c:</label>
-        <input type ="text" id="sidec" name="sidec" value ="0"readonly> <br>
-
-        <button type="button" onclick="Coslaw()" value="Calculate"> Calculator</button>
-    </label>
-    </form>
-        <script src="script.js"></script>
-    
-<body>
 
 </body>
+
+<form action="/action_page.php">
+    <h1> Cosine Law Calculator </h1>
+    <label for="side_a">Side a:</label><br>
+    <input type="text" id="side_a" name="a" value="0"><br>
+    <label for="side_b">Side b:</label><br>
+    <input type="text" id="side_b" name="b" value="0"><br>
+    <label for="Angle">Angle C:</label><br>
+    <input type="text" id="Angle" name="angle" value="0"><br>
+    <label for="c_length"> Side c (Result):</label><br>
+    <input type="text" id="c_length" name="c" value="0" readonly> <br>
+    <input type="button" onclick="Coslaw()" value="Calculate">
+</form>
+
+
+<form action="/action_page.php"> 
+    <h1> Asymptote Finder </h1>
+    <label for="side_a">m Value:</label><br>
+    <input type="text" id="side_a" name="a" value="0"><br>
+    <label for="side_b">n Value:</label><br>
+    <input type="text" id="side_b" name="b" value="0"><br>
+    <label for="Angle">Asymptote Type (result):</label><br>
+    <input type="text" id="Angle" name="angle" value="0" readonly><br>
+    <input type="button" onclick="Asymptote()" value="Calculate">
+</form>
+
+</label>
+</form>
+<script src="script.js"></script>
+
+
+
+</body>
+
 </html>
