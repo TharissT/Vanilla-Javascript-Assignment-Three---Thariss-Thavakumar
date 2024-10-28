@@ -6,3 +6,55 @@ function Coslaw() {
     const c_length = Math.sqrt(a * a + b * b - (2 * a * b * Math.cos(C)));
     document.getElementById("c_length").value = c_length.toFixed(2);
 }
+
+function calculateAsymptote() {
+    const m = parseInt(document.getElementById('m').value);
+    const n = parseInt(document.getElementById('n').value);
+    let result;
+    if (isNaN(m) || isNaN(n)) {
+        result = "Please enter valid numbers for m and n.";
+    } else if (m === n) {
+        result = "The asymptote is horizontal";
+    } else if (n > m) {
+        result = "The asymptote is the x-axis";
+    } else {
+        const Difference = m - n;
+        switch (Difference) {
+            case 1:
+                result = "The asymptote is Linear";
+                break;
+            case 2:
+                result = "The asymptote is Quadratic";
+                break;
+            case 3:
+                result = "The asymptote is Cubic";
+                break;
+            case 4:
+                result = "The asymptote is Quartic";
+                break;
+            case 5:
+                result = "The asymptote is Quintic";
+                break;
+            case 6:
+                result = "The asymptote is Sextic";
+                break;
+            case 7:
+                result = "The asymptote is Septic";
+                break;
+            case 8:
+                result = "The asymptote is Octic";
+                break;
+            case 9:
+                result = "The asymptote is Nonic";
+                break;
+            case 10:
+                result = "The asymptote is Decic";
+                break;
+            default:
+                result = "The asymptote is a higher degree polynomial";
+        }
+    }
+  
+    document.getElementById('AsymptoteType').value = result;
+  }
+  

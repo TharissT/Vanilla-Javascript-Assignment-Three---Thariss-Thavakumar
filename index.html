@@ -10,7 +10,6 @@
 </head>
 
 </body>
-
 <form action="/action_page.php">
     <h1> Cosine Law Calculator </h1>
     <label for="side_a">Side a:</label><br>
@@ -24,16 +23,15 @@
     <input type="button" onclick="Coslaw()" value="Calculate">
 </form>
 
-
-<form action="/action_page.php"> 
+<form action="/action_page.php">
     <h1> Asymptote Finder </h1>
-    <label for="side_a">m Value:</label><br>
-    <input type="text" id="side_a" name="a" value="0"><br>
-    <label for="side_b">n Value:</label><br>
-    <input type="text" id="side_b" name="b" value="0"><br>
-    <label for="Angle">Asymptote Type (result):</label><br>
-    <input type="text" id="Angle" name="angle" value="0" readonly><br>
-    <input type="button" onclick="Asymptote()" value="Calculate">
+    <label for="m_value">m:</label><br>
+    <input type="text" id="m" name="m" value="0"><br>
+    <label for="n_value">n:</label><br>
+    <input type="text" id="n" name="n" value="0"><br>
+    <label for="AsymptoteType">AsymptoteType:</label><br>
+    <input type="text" id="AsymptoteType" name="AsymptoteType" value="0" readonly> <br>
+    <input type="button" onclick="calculateAsymptote()" value="Calculate">
 </form>
 
 </label>
