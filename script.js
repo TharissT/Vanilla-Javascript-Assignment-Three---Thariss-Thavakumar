@@ -57,4 +57,6 @@ function calculateAsymptote() {
   
     document.getElementById('AsymptoteType').value = result;
   }
+
+  
   
