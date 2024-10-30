@@ -54,9 +54,15 @@ function calculateAsymptote() {
                 result = "The asymptote is a higher degree polynomial";
         }
     }
-  
-    document.getElementById('AsymptoteType').value = result;
-  }
 
-  
-  
+    document.getElementById('AsymptoteType').value = result;
+}
+
+function calculatePi() {
+    const n = parseInt(document.getElementById('nValue').value);
+    let sum = 0;
+    for (let i = 0; i < n; i++) {
+        sum += (4 * ((-1) ** i) / (2 * i + 1));
+    }
+    document.getElementById('piApproximation').value = sum;
+}

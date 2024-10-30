@@ -8,43 +8,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3 - Triangle Calculators</title>
 </head>
-</body> 
-    <h1 class="title"> Vanilla Javascript</h1>
-    <div class="calculators">
-        <form action="/action_page.php">
-            <h1> Cosine Law Calculator </h1>
-            <label for="side_a">Side a:</label><br>
-            <input type="text" id="side_a" name="a" value="0"><br>
-            <label for="side_b">Side b:</label><br>
-            <input type="text" id="side_b" name="b" value="0"><br>
-            <label for="Angle">Angle C:</label><br>
-            <input type="text" id="Angle" name="angle" value="0"><br>
-            <label for="c_length"> Side c (Result):</label><br>
-            <input type="text" id="c_length" name="c" value="0" readonly> <br>
-            <input type="button" onclick="Coslaw()" value="Calculate">
-        </form>
+</body>
+<h1 class="title"> Vanilla Javascript</h1>
+<div class="calculators">
+    <form action="/action_page.php">
+        <h1> Cosine Law Calculator </h1>
+        <label for="side_a">Side a:</label><br>
+        <input type="text" id="side_a" name="a" value="0"><br>
+        <label for="side_b">Side b:</label><br>
+        <input type="text" id="side_b" name="b" value="0"><br>
+        <label for="Angle">Angle C:</label><br>
+        <input type="text" id="Angle" name="angle" value="0"><br>
+        <label for="c_length"> Side c (Result):</label><br>
+        <input type="text" id="c_length" name="c" value="0" readonly> <br>
+        <input type="button" onclick="Coslaw()" value="Calculate">
+    </form>
 
-        <form action="/action_page.php">
-            <h1> Asymptote Finder </h1>
-            <label for="m_value">m:</label><br>
-            <input type="text" id="m" name="m" value="0"><br>
-            <label for="n_value">n:</label><br>
-            <input type="text" id="n" name="n" value="0"><br>
-            <label for="AsymptoteType">AsymptoteType:</label><br>
-            <input type="text" id="AsymptoteType" name="AsymptoteType" value="0" readonly> <br>
-            <input type="button" onclick="calculateAsymptote()" value="Calculate">
-        </form>
+    <form action="/action_page.php">
+        <h1> Asymptote Finder </h1>
+        <label for="m_value">m:</label><br>
+        <input type="text" id="m" name="m" value="0"><br>
+        <label for="n_value">n:</label><br>
+        <input type="text" id="n" name="n" value="0"><br>
+        <label for="AsymptoteType">AsymptoteType:</label><br>
+        <input type="text" id="AsymptoteType" name="AsymptoteType" value="0" readonly> <br>
+        <input type="button" onclick="calculateAsymptote()" value="Calculate">
+    </form>
 
-        <form action="/action_page.php">
-            <h1> Gregory-Leibniz Pi Approximation </h1>
-            <label for="n_value">n Value:</label><br>
-            <input type="text" id="m" name="m" value="0"><br>
-            <label for="AsymptoteType">Pi Approximation:</label><br>
-            <input type="text" id="AsymptoteType" name="AsymptoteType" value="0" readonly> <br>
-            <input type="button" onclick="calculatePiApproximation()" value="Calculate">
-        </form> 
-    </div>
-    <script src="script.js"></script>
+    <form action="/action_page.php">
+        <h1>Pi Approximation</h1>
+        <label for="nValue">nValue:</label><br>
+        <input type="text" id="nValue" name="nValue" value="0"><br>
+        <label for="PiApproximation">PiApproximation:</label><br>
+        <input type="text" id="piApproximation" name="piApproximation" value="0" readonly> <br>
+        <input type="button" onclick="calculatePi()" value="Calculate">
+    </form>
+</div>
+<script src="script.js"></script>
 </body>
 
 </html>
